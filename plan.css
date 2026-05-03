@@ -1,0 +1,175 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Left side */
+.nav-left h2 {
+  margin: 0 0 10px 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+/* Active tab */
+.tabs a.active {
+  color: #00a86b;
+  font-weight: bold;
+}
+
+.tabs a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00a86b;
+  border-radius: 2px;
+}
+
+/* Right side toggle */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  background: #eee;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.toggle span {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Active toggle */
+.toggle span.active {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.pricing {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.card h1 {
+  margin: 10px 0;
+}
+
+.card span {
+  color: #777;
+  font-size: 14px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 14px;
+
+  list-style-type: circle;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Button styles */
+.primary {
+  background: #00a86b;
+  color: white;
+}
+
+.secondary {
+  background: #cdeee0;
+  color: #008f5a;
+}
+
+.disabled {
+  background: #eee;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Popular card */
+.popular {
+  border: 2px solid #00a86b;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #00a86b;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
